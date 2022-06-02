@@ -1,0 +1,26 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/">Home</a>
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              RXJS
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Operators
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <a mat-list-item routerLink="/rxjs/operators/of"> of </a>
+              <a mat-list-item routerLink="/rxjs/operators/map"> map </a>
+                
+            </mat-expansion-panel>
+        </mat-accordion>
+            
+        </mat-expansion-panel>
+    </mat-accordion>
+</mat-nav-list>
+

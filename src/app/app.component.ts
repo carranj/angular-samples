@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, of, from } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'rxjs-samples';
-}
+export class AppComponent {}
